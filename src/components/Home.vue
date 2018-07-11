@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-   <p>{{location}}</p>
+    <p>{{location}}</p>
     <section class="section">
       <div class="container">
         <div class="card">
@@ -18,17 +18,27 @@
         <i class="fa fa-angle-down"></i>
       </span>
     </a>
-
             <div v-show="isToggled" class="content description">
-            <div class="book-img">
-              <img :src="book.img" />
+              <div class="columns">
+                <div class="column is-one-fifth">
+                  <div class="book-img">
+                    <img :src="book.img" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="book-description">
+                    <p>
+                      {{book.description}}
+                    </p>
+                    <p>
+                      <a href="#">Amazon</a><br>
+                      <a href="#">Audible</a><br>
+                      <a href="#">Google</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="book-description">
-              <p>
-              {{book.description}}
-              </p>
-            </div>
-          </div>
           </div>
           <div style="clear:both;"></div>
           <footer class="card-footer">
@@ -104,17 +114,28 @@ section.nav-section {
 }
 
 .description {
-  font-size: 12px;
-}
-.book-img {
-  max-width: 100px;
-  float:left;
-  padding: 0 10px;
-}
-.book-description {
-}
-.card-footer {
-  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Cabin', sans-serif;
 }
 
+.book-img {
+  max-width: 200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.book-description {
+  text-align: left;
+}
+
+.card-header {
+  padding: 0 10px;
+  background-color: #1ABC9C;
+  color: #fff;
+}
+.card-header-title {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 </style>

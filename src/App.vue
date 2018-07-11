@@ -4,7 +4,10 @@
       <div class="column is-2 is-sidebar-menu">
         <aside class="menu">
           <p class="menu-label">
-            General
+          <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/book-icon.png" alt="Book" style="max-width:50px;">
+          </p>
+          <p class="menu-label">
+           Topics
           </p>
           <ul class="menu-list">
             <router-link tag="li" to="/"><a>Home</a></router-link>
@@ -29,6 +32,7 @@ export default {
 
 <style>
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Condensed:400,700');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,5 +49,11 @@ export default {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(1000px);
   opacity: 0;
+}
+li.router-link-exact-active.router-link-active {
+  background: #1ABC9C;
+}
+li.router-link-exact-active a:hover {
+  background: #1ABC9C;
 }
 </style>
