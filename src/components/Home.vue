@@ -139,7 +139,9 @@ section.nav-section {
   font-size: 18px;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 .fa-links {
   padding: 0 5px;
 }
+
 </style>
