@@ -4,7 +4,7 @@
       <div class="column is-2 is-sidebar-menu">
         <aside class="menu">
           <p class="menu-label">
-          <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/book-icon.png" alt="Book" style="max-width:50px;">
+          <router-link tag="a" to="/"><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/book-icon.png" alt="Book" style="max-width:50px;" title="Home"></router-link>
           </p>
           <p class="menu-label">
            Topics
