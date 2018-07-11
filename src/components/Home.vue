@@ -31,9 +31,9 @@
                       {{book.description}}
                     </p>
                     <p>
-                      <a href="#">Amazon</a><br>
-                      <a href="#">Audible</a><br>
-                      <a href="#">Google</a>
+                      <a href="#"><i class="fa fa-amazon fa-links"></i></a>
+                      <a href="#"><i class="fa fa-google fa-links"></i></a>
+                      <a href="#"><i class="fa fa-twitter fa-links"></i></a>
                     </p>
                   </div>
                 </div>
@@ -133,9 +133,13 @@ section.nav-section {
   background-color: #1ABC9C;
   color: #fff;
 }
+
 .card-header-title {
   color: #fff;
   font-size: 18px;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.fa-links {
+  padding: 0 5px;
 }
 </style>
