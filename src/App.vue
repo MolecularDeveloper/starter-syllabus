@@ -12,6 +12,11 @@
           <ul class="menu-list">
             <router-link tag="li" to="/"><a>Home</a></router-link>
             <router-link tag="li" to="/history"><a>History</a></router-link>
+            <router-link tag="li" to="/philosophy"><a>Philosophy</a></router-link>
+            <router-link tag="li" to="/psychology"><a>Psychology</a></router-link>
+            <router-link tag="li" to="/self-help"><a>Self-Help</a></router-link>
+            <router-link tag="li" to="/web-development"><a>Web Development</a></router-link>
+            <router-link tag="li" to="/add-topic"><a>Add Topic</a></router-link>
           </ul>
         </aside>
       </div>
@@ -38,7 +43,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.menu {
+  margin-top: 20px;
 }
 
 .slide-fade-enter-active {
@@ -59,6 +66,15 @@ li.router-link-exact-active.router-link-active {
 
 li.router-link-exact-active a:hover {
   background: #1ABC9C;
+}
+.column.is-2, .column.is-2-tablet {
+  border-right: 1px solid lightgrey;
+}
+.column.is-main-content {
+  padding: 0px;
+}
+.hello {
+  margin-top: 60px;
 }
 
 </style>

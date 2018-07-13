@@ -4,6 +4,11 @@
 
 ## Build Setup
 
+#Todo : create book component for iteration & individual self control 
+
+
+
+
 ``` bash
 # install dependencies
 npm install
